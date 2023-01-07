@@ -1,8 +1,22 @@
+import { useRef , useState, useEffect } from "React";
 import './App.css';
+import download from 'downloadjs';
+
+
 
 function App() {
+
+  var myName = useRef("");
+  const [peerUsername , setPeerUsername] = useState("");
+  const userList = useRef([""]);
+
+
+
   return (
-    <div className="App">
+    <div >
+      <div> 
+        Transfer Completered
+      </div>
       
     </div>
   );
