@@ -6,7 +6,7 @@ import { generateUsername } from "unique-username-generator";
 
 function App() {
 
-  var myName = useRef("");
+  var myname = useRef("");
   const [peerUsername , setPeerUsername] = useState("");
   const userList = useRef([""]);
 
@@ -31,17 +31,27 @@ function App() {
 
 
   useEffect(()=>{
-    const userName = generateUsername("-");
+    const username = generateUsername("-");
     window.document.title = "SEMD";
     if(window.location.pathname !== "/"){
       let p = window.location.pathname.slice(1);
-      myName.current = p;
-      const btn: any = docoment.querySelectorAll(".btn");
+      myname.current = p;
+      const btn: any = document.querySelectorAll(".btn");
       btn.forach((i:any)=>{
         i.classList.add("hidden")
       });
 
-      const searc
+      const search:any = document.querySelector(".search");
+      search.classList.toggle("hidden");
+      document.querySelector(".fileinput")?.classList.add("hidden");
+
+    }
+
+    if(window.location.pathname=="/"){
+      username ? (myname.current = username) : null;
+      document.querySelector(".fileinput")?.classList.add("hidden");
+
+      document.querySelector(".recieve_btn")?.classList.toggle("hidden");
     }
   })
 
