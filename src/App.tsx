@@ -383,7 +383,8 @@ function App() {
   }
   return (
     <div className="home relative bg-b h-screen overflow-hidden  ">
-      <div className="text-white toast completed_animation absolute top-3 md:top-[90%]  right-[25%] left-[25%] md:right-10  md:left-[unset] flex items-center justify-center  rounded-[25px] md:rounded-[5px] p-2 py-3 z-[66] text-xs bg-g ">
+      <div className="text-white toast completed_animation absolute top-3 md:top-[90%]  right-[25%] left-[25%] md:right-10  md:left-[unset] flex items-center justify-center  rounded-[25px] md:rounded-[5px] p-2 py-3 z-[66] text-xs bg-g
+       ">
         Transfer Completed ⚡
       </div>
 
@@ -522,7 +523,7 @@ function App() {
                 {myname ? myname.current : ""}
               </div>
             </div>
-            <div className="bg-g p-1 rounded  flex items-center justify-items-center ml-[-1.5rem] self-center justify-self-end md:hidden  h-[min-content]">
+            <div className="bg-b p-1 rounded  flex items-center justify-items-center ml-[-1.5rem] self-center justify-self-end md:hidden  h-[min-content]">
               <QRCode
                 size={80}
                 style={{}}
@@ -535,7 +536,7 @@ function App() {
       </div>
       <span
         id="progress"
-        className="bg-g w-0 absolute  progress h-1 top-0"
+        className="bg-b w-0 absolute  progress h-1 top-0"
       ></span>
       <div className="md:justify-self-end justify-self-center   md:bg-transparent md:hidden   rounded-[35px]  inline-flex items-center gap-1 md:mr-6  md:self-center myname  justify-center  text-white font-mono ">
         <img
@@ -565,7 +566,7 @@ function App() {
           className="btn send_btn shadow-[1px_1px_20px_-8px_rgba(20,220,220,.51)] bg-g  text-white px-5 py-3 rounded-[25px] min-w-[150px] "
           onClick={Sendmsg}
         >
-          Send
+          Semd
         </button>
         <button
           id="recieve_btn"
@@ -582,7 +583,8 @@ function App() {
 
       {/* <span className="hidden md:flex  h-full"></span> */}
       <p className="foot md:absolute md:bottom-[2%] py-2 md:py-0  md:bg-transparent bg-lb w-[100%]  text-center justify-self-end self-center  md:text-xs text-[8px]  text-gray-400">
-        @amithjayapraban ⚡
+        <a target="_blank" href="https://github.com/real-tea">@real-tea 🔨✨</a>
+        
       </p>
     </div>
   );
