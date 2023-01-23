@@ -398,7 +398,7 @@ function App() {
       </div>
       <div
         onClick={() => document.querySelector(".info")?.classList.add("hidden")}
-        className="info hidden   backdrop-blur bg-lb  shadow-3xl text-white p-3 py-6  rounded-[10px] break-words md:max-w-[40vw] max-w-[80vw] md:right-5 right-2 md:top-6 top-5 absolute z-[99]"
+        className="info hidden   backdrop-blur bg-b  shadow-3xl text-white p-3 py-6  rounded-[10px] break-words md:max-w-[40vw] max-w-[80vw] md:right-5 right-2 md:top-6 top-5 absolute z-[99]"
       >
         <div
           className="flex  absolute top-2 w-4 h-4 justify-center items-center p-0 bg-red-600 rounded-full right-2 z-[999]]  "
@@ -413,7 +413,7 @@ function App() {
         </ol>
         <p className=" px-6 mt-4 text-gray-100 text-xs">
           {" "}
-          Can't scan QR Code? Just add the name at the end of the URL 😀{" "}
+          Can't scan QR Code? Just add the name at the end of the URL, eg : semd.vercel.app/stuck-superior 😀{" "}
         </p>
       </div>
       <svg
@@ -582,8 +582,9 @@ function App() {
       </div>
 
       {/* <span className="hidden md:flex  h-full"></span> */}
-      <p className="foot md:absolute md:bottom-[2%] py-2 md:py-0  md:bg-transparent bg-lb w-[100%]  text-center justify-self-end self-center  md:text-xs text-[8px]  text-gray-400">
-        <a target="_blank" href="https://github.com/real-tea">@real-tea 🔨✨</a>
+      <p className="foot md:absolute md:bottom-[2%] py-2 md:py-0  md:bg-transparent bg-b w-[100%]  text-center justify-self-end self-center  md:text-xs text-[8px]  text-gray-400">
+        <a className="text-black" target="_blank" href="https://github.com/real-tea">@real-tea 🔨✨</a>
+        <p className="py-2 text-black ">Made with 💖 by Akash</p>
         
       </p>
     </div>
